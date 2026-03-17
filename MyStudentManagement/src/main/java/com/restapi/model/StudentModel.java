@@ -25,8 +25,8 @@ public class StudentModel {
 		
 	}
 
-	public StudentModel(String name, float percentage, String branch) {
-		super();
+	public StudentModel(int id ,String name, float percentage, String branch) {
+		this.id = id;
 		this.name = name;
 		this.percentage = percentage;
 		this.branch = branch;
