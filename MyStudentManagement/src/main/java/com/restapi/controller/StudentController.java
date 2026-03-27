@@ -58,7 +58,6 @@ public class StudentController {
 	
 	@DeleteMapping("/Student/delete/{roll}")
 	public String deleteStudent(@PathVariable int roll) {
-		
 		if(repo.findById(roll).isEmpty()) {
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Student with rollno " + roll + " not found!");
 		}
