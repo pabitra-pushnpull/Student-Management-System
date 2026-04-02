@@ -32,7 +32,7 @@ public class StudentController {
 	
 	@GetMapping("/getStudent/{id}")
 	public StudentModel getbyid(@PathVariable int id) {
-		StudentModel studentModel = repo.findById(id).orElseThrow(() -> new RuntimeException("Student Not Found for rollNo. : " + id));
+		StudentModel studentModel = repo.findById(id).orElseThrow(() -> new RuntimeException("Student not Found for rollNo. : " + id));
 		return studentModel;
 	}
 	
