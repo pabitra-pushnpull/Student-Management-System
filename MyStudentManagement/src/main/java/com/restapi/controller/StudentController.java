@@ -21,7 +21,7 @@ import com.restapi.repository.StudentRpo;
 public class StudentController {
 
 	@Autowired
-	StudentRpo repo;
+	StudentRpo repository;
 	
 	@GetMapping("/getall")
 	public List<StudentModel> getall() 
