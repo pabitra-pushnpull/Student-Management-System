@@ -8,5 +8,4 @@ public interface StudentRpo extends JpaRepository<StudentModel, Integer> {
 
 	
 	
-	
 }
